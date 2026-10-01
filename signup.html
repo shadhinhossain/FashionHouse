@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">Fashion<span>House</span></div>
+            <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a
+                    href="gallery.html">Gallery</a></nav>
+        </div>
+    </header>
+    <div class="page-title">
+        <h1>Registration</h1>
+        <p>Create a new account</p>
+    </div>
+    <form class="form" action="#" method="post" enctype="multipart/form-data">
+        <h2>Sign-Up Form</h2>
+        <div class="row">
+            <div class="field"><label>Full Name</label><input type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@email.com"
+                    required></div>
+        </div>
+        <div class="row">
+            <div class="field"><label>Password</label><input type="password" name="password" required></div>
+            <div class="field"><label>Age</label><input type="number" name="age" min="13" max="100"></div>
+        </div>
+        <div class="row">
+            <div class="field"><label>Date of Birth</label><input type="date" name="dob"></div>
+            <div class="field"><label>Telephone</label><input type="tel" name="phone" placeholder="+880"></div>
+        </div>
+        <div class="field"><label>Website</label><input type="url" name="url" placeholder="https://example.com"></div>
+        <div class="field"><label>Gender</label>
+            <div class="options"><label><input type="radio" name="gender" value="male"> Male</label><label><input
+                        type="radio" name="gender" value="female"> Female</label><label><input type="radio"
+                        name="gender" value="other"> Other</label></div>
+        </div>
+        <div class="field"><label>Favorite Category</label><select name="category">
+                <option>Select</option>
+                <option>Men's Fashion</option>
+                <option>Women's Fashion</option>
+                <option>Shoes</option>
+                <option>Accessories</option>
+            </select></div>
+        <div class="field"><label>Profile Photo</label><input type="file" name="photo" accept="image/*"></div>
+        <div class="field"><label>Interests</label>
+            <div class="options"><label><input type="checkbox" name="fashion"> Fashion</label><label><input
+                        type="checkbox" name="shopping"> Shopping</label><label><input type="checkbox" name="offers">
+                    Offers</label></div>
+        </div>
+        <div class="field"><label>About Yourself</label><textarea name="about"
+                placeholder="Write something about yourself"></textarea></div>
+        <div class="field"><label><input type="checkbox" required> I agree to the terms and conditions.</label></div>
+        <div class="actions"><button class="btn" type="submit">Submit</button><button class="btn reset"
+                type="reset">Reset</button></div>
+        <p style="text-align:center;margin-top:18px">Already have an account? <a href="login.html"
+                style="color:#e67e22">Login</a></p>
+    </form>
+    <footer>
+        <div class="logo">Fashion<span>House</span></div>
+        <p>© 2026 FashionHouse</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
+        </div>
+    </footer>
+</body>
+
+</html>
